@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/645d392c03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/headerbanner.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>hDC Host</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-bar">
+                <!--Logo-->
+                <div class="logo">
+                    <img src="/img/hdchostlogo.png" alt="">
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#nav-plan" class="nav-link">Planos</a></li>
+                        <li><a href="#nav-contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="login-button">
+                    <button>
+                        <a href="#">Login</a>
+                    </button>
+                </div>
+                <!--Icon Menu Mobile-->
+                <div class="mobile-menu-icon">
+                    <button id="btn-action">
+                        <img class="icon" src="/img/menu_white_36dp.svg" alt="Mobile">
+                    </button>
+                </div>
+            </nav>
+            <!--Menu Mobile-->
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Planos</a></li>
+                    <li><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="login-button">
+                    <button>
+                        <a href="#">Login</a>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!--Banner-->
+        <main class="main">
+            <div class="banner">
+                <h1>hDC Host</h1>
+                <p>Os melhores planos para qualquer tipo de projeto!</p>
+            </div>
+            <!--Specialties-->
+            <section class="specialties">
+                <ul>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Segurança</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde voluptatum fugit sequi.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <h3>Velocidade</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde voluptatum fugit sequi.</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-comments"></i>
+                        <h3>Suporte</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde voluptatum fugit sequi.</p>
+                    </li>
+                </ul>
+            </section>
+            <!--Pricing container-->
+            <section class="pricing-container">
+                <h1>Planos e preços</h1>
+                <p>Selecione o plano perfeito para você</p>
+                <div class="plans-container" id="nav-plan">
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$15/mês</li>
+                            <li class="plan-name">Padrão</li>
+                            <li>2GB de espaço</li>
+                            <li>10 Sub-domínios</li>
+                            <li>25 Contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn">Selecionar</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$30/mês</li>
+                            <li class="plan-name">Dedicado</li>
+                            <li>5GB de espaço</li>
+                            <li>20 Sub-domínios</li>
+                            <li>50 Contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn">Selecionar</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price recommended">R$50/mês</li>
+                            <li class="plan-name">Dedicado Plus</li>
+                            <li>10GB de espaço</li>
+                            <li>100 Sub-domínios</li>
+                            <li>100 Contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn recommended">Selecionar</li>
+                        </ul>
+                    </div>
+                    <div class="plan">
+                        <ul>
+                            <li class="price">R$100/mês</li>
+                            <li class="plan-name">Cloud</li>
+                            <li>20GB de espaço</li>
+                            <li>200 Sub-domínios</li>
+                            <li>200 Contas de e-mail</li>
+                            <li>C-panel</li>
+                            <li>Suporte 24/7</li>
+                            <li class="plan-btn">Selecionar</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--Search do main-->
+            <section class="searchdomain-container">
+                <h2>Buscar domínio</h2>
+                <p>Veja se o domínio que você deseja está disponível</p>
+                <form>
+                    <input type="text" placeholder="Digite seu domínio desejado" name="name">
+                    <input type="submit" value="Buscar Dominio">
+                </form>
+            </section>
+            <!--Contact container-->
+            <section class="contact-container" id="nav-contact">
+                <h2>Entre em contato</h2>
+                <p>Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para o seu negócio.</p>
+                <form>
+                    <input type="text" placeholder="Seu nome" name="name">
+                    <input type="email" placeholder="Seu e-mail" name="name">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem..."></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>horaDeCodar &copy; 2022</p>
+        </footer>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

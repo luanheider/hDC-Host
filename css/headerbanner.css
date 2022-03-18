@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background: #232A31;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list ul li {
+    list-style: none;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.nav-list ul li + li {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #FFF;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: #CCC;
+}
+
+.login-button button {
+    border: none;
+    background-color: #2CC76A;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+.login-button button:hover {
+    background-color: #22BB5F;
+	color: #FFF;
+}
+
+.login-button button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+/* Banner */
+.banner {
+	background-image: url(../img/mainbanner.png);
+	background-position: center;
+	background-size: cover;
+	padding: 10em 0;
+}
+
+.banner h1, .banner p {
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+}
+
+.banner h1 {
+	font-size: 54px;
+}
+
+.banner p {
+	font-size: 32px;
+}
+
+.mobile-menu-icon, .menu-mobile {
+    display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-list ul li, .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .menu-mobile ul li {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .menu-mobile .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .menu-mobile .login-button button {
+        width: 100%;
+    }
+    .banner h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .banner p {
+        font-size: 25px;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .banner p {
+        font-size: 16px;
+    }
+}
